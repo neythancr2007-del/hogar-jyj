@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&J Hogar y Construcción | Pisos SPC, PVC y Paneles en Costa Rica</title>
+    <meta name="description" content="Especialistas en pisos SPC, láminas PVC y paneles decorativos de alta calidad en Costa Rica. Envíos a todo el país.">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="empty-space"></div>
+
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu-desplegable" class="menu-nav">
+                <a href="index.html">Inicio</a>
+                
+                <div class="dropdown-right">
+                    <a href="javascript:void(0)" class="main-link">
+                        Productos <span class="arrow">▶</span>
+                    </a>
+                    
+                    <div class="submenu-mega-horizontal">
+                        <div class="mega-column">
+                            <h4>Pisos y Paredes</h4>
+                            <a href="#">Pisos Porcelanato / Cerámica</a>
+                            <a href="spc.html">Piso SPC (Perfiles)</a>
+                            <a href="pvc.html">Láminas PVC (Perfiles)</a>
+                            <a href="#">Piso Adhesivo</a>
+                            <a href="#">Panel 3D (Pegamento)</a>
+                            <a href="#">Vigas y Rodapié</a>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Paneles y Decoración</h4>
+                            <a href="exterior.html">Panel Exterior (WPC)</a>
+                            <a href="interior.html">Panel Interior</a>
+                            <a href="#">Papel Tapiz / Rollos</a>
+                            <a href="#">Cornisas WPC</a>
+                            <a href="tablillas.html">Tablilla PVC</a>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Construcción y Baño</h4>
+                            <a href="#">Grifería</a>
+                            <a href="#">Pegamentos y Bondex</a>
+                            <a href="#">Fragua</a>
+                            <a href="#">Deck (Clip)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contacto">Contacto</a>
+                <a href="#nosotros">Sobre Nosotros</a>
+            </nav>
+
+            <div class="logo">
+                <h1>J&J <span>HOGAR Y CONSTRUCCIÓN</span></h1>
+            </div>
+
+            <div class="nav-actions">
+                <button id="cart-btn" class="cart-trigger">
+                    🛒 Mi Carrito <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-carrusel">
+        <div class="carrusel-contenedor">
+            
+            <div class="mi-slide fade">
+                <div class="overlay"></div>
+                <img src="IMAGENES/spc.png" alt="Pisos SPC de Alta Gama" class="img-hero">
+                <div class="hero-content">
+                    <div class="hero-text-wrapper">
+                        <h2>PISOS SPC <br><span>DE ALTA GAMA</span></h2>
+                        <p>Resistencia extrema y elegancia natural en cada paso. El futuro de la construcción hoy.</p>
+                        <div class="hero-actions">
+                            <a href="spc.html" class="btn-hero-primary">Explorar Colección</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mi-slide fade">
+                <div class="overlay"></div>
+                <img src="IMAGENES/pvc.png" alt="Láminas PVC Marmolizadas" class="img-hero">
+                <div class="hero-content">
+                    <div class="hero-text-wrapper">
+                        <h2>LÁMINAS DE PVC <br><span>MARMOLIZADAS</span></h2>
+                        <p>Transforma tus paredes con acabados de lujo impermeables.</p>
+                        <div class="hero-actions">
+                            <a href="pvc.html" class="btn-hero-primary">VER CATÁLOGO PVC</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mi-slide fade">
+                <div class="overlay"></div>
+                <img src="IMAGENES/paneles.png" alt="Tecnología WPC y Paneles 3D" class="img-hero">
+                <div class="hero-content">
+                    <div class="hero-text-wrapper">
+                        <h2>TECNOLOGÍA WPC <br><span>Y PANELES 3D</span></h2>
+                        <p>La combinación perfecta entre madera y polímero. Diseños vanguardistas para interiores y exteriores.</p>
+                        <div class="hero-actions">
+                            <a href="interior.html" class="btn-hero-primary">Ver Paneles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="feature-icon">💎</div>
+                <h3>Calidad Premium</h3>
+                <p>Productos importados certificados</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚚</div>
+                <h3>Envíos Rápidos</h3>
+                <p>Entrega en toda la GAM</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">💰</div>
+                <h3>Mejores Precios</h3>
+                <p>Directo del importador</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Garantía Total</h3>
+                <p>Respaldo en todos los productos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias-principales">
+        <div class="section-header-center">
+            <h2 class="titulo-seccion">Nuestras Categorías</h2>
+            <div class="underline-center"></div>
+            <p class="subtitulo-seccion">Encuentra todo lo que necesitás para tu proyecto</p>
+        </div>
+
+        <div class="categorias-grid">
+            <a href="spc.html" class="categoria-card">
+                <div class="categoria-image">
+                    <img src="IMAGENES/spc.png" alt="Pisos SPC">
+                    <div class="categoria-overlay">
+                        <h3>PISOS SPC</h3>
+                        <p>Desde ₡8,990/m²</p>
+                        <span class="btn-categoria">Ver Catálogo →</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pvc.html" class="categoria-card">
+                <div class="categoria-image">
+                    <img src="IMAGENES/pvc.png" alt="Láminas PVC">
+                    <div class="categoria-overlay">
+                        <h3>LÁMINAS PVC</h3>
+                        <p>Desde ₡16,500</p>
+                        <span class="btn-categoria">Ver Catálogo →</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="interior.html" class="categoria-card">
+                <div class="categoria-image">
+                    <img src="IMAGENES/paneles.png" alt="Paneles Interiores">
+                    <div class="categoria-overlay">
+                        <h3>PANELES WPC</h3>
+                        <p>Desde ₡3,990</p>
+                        <span class="btn-categoria">Ver Catálogo →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="promociones">
+        <div class="container-promo">
+            <div class="section-header-center">
+                <h2 class="titulo-seccion">Promociones Exclusivas</h2>
+                <div class="underline-center"></div>
+                <p class="subtitulo-seccion">Aprovecha nuestras ofertas especiales</p>
+            </div>
+            
+            <div class="carrusel-promo-wrapper">
+                <div class="carrusel-promo-track">
+                    <div class="producto-promo">
+                        <div class="img-badge">OFERTA</div>
+                        <img src="IMAGENES/deck.jpeg" alt="Oferta Grifería">
+                        <div class="promo-info">
+                            <h3>Grifería Moderna</h3>
+                            <p class="promo-desc">20% OFF</p>
+                            <a href="#" class="btn-promo-small">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="producto-promo">
+                        <div class="img-badge">OFERTA</div>
+                        <img src="IMAGENES/imagen8.jpeg" alt="Oferta Porcelanato">
+                        <div class="promo-info">
+                            <h3>Porcelanato Madera</h3>
+                            <p class="promo-desc">Precio Especial</p>
+                            <a href="#" class="btn-promo-small">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="producto-promo">
+                        <div class="img-badge">OFERTA</div>
+                        <img src="IMAGENES/imagen7.jpeg" alt="Oferta Pintura">
+                        <div class="promo-info">
+                            <h3>Pintura Exterior</h3>
+                            <p class="promo-desc">Promo 3x2</p>
+                            <a href="#" class="btn-promo-small">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="subtitulo-promo">Todo lo que necesitás para tu hogar en un solo lugar.</p>
+        </div>
+    </section>
+
+    <section class="por-que-elegirnos">
+        <div class="container-elegir">
+            <div class="section-header-center">
+                <h2 class="titulo-seccion">¿Por Qué Elegirnos?</h2>
+                <div class="underline-center"></div>
+            </div>
+
+            <div class="elegir-grid">
+                <div class="elegir-item">
+                    <div class="elegir-numero">01</div>
+                    <h3>Experiencia Comprobada</h3>
+                    <p>Más de 10 años sirviendo a clientes satisfechos en toda Costa Rica</p>
+                </div>
+                <div class="elegir-item">
+                    <div class="elegir-numero">02</div>
+                    <h3>Asesoría Personalizada</h3>
+                    <p>Nuestro equipo te ayuda a elegir el producto perfecto para tu proyecto</p>
+                </div>
+                <div class="elegir-item">
+                    <div class="elegir-numero">03</div>
+                    <h3>Instalación Profesional</h3>
+                    <p>Contamos con instaladores certificados para garantizar resultados perfectos</p>
+                </div>
+                <div class="elegir-item">
+                    <div class="elegir-numero">04</div>
+                    <h3>Post-Venta Garantizada</h3>
+                    <p>Seguimiento después de tu compra para asegurar tu satisfacción total</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios" id="testimonios">
+        <div class="container-testimonios">
+            <div class="section-header-center">
+                <h2 class="titulo-seccion">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="underline-center"></div>
+            </div>
+
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="testimonio-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Excelente calidad de pisos SPC. La instalación fue rápida y el resultado quedó hermoso. Muy recomendados."</p>
+                    <p class="testimonio-autor">- María González, San José</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="testimonio-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Los paneles WPC transformaron mi sala. El equipo muy profesional y los precios competitivos."</p>
+                    <p class="testimonio-autor">- Carlos Ramírez, Heredia</p>
+                </div>
+                <div class="testimonio-card">
+                    <div class="testimonio-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-texto">"Las láminas PVC son de excelente calidad. Perfectas para mi baño. Entrega puntual y buen servicio."</p>
+                    <p class="testimonio-autor">- Ana López, Alajuela</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="nosotros">
+        <div class="cta-content">
+            <h2>¿Listo Para Transformar Tu Espacio?</h2>
+            <p>Contáctanos hoy y recibe asesoría personalizada sin compromiso</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/50685884086" class="btn-cta-primary" target="_blank">
+                    📱 WhatsApp: 8588-4086
+                </a>
+                <a href="#contacto" class="btn-cta-secondary">
+                    📞 Solicitar Cotización
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-premium" id="contacto">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h2 class="footer-logo">J&J <span>HOGAR</span></h2>
+                <p>Especialistas en acabados de lujo para el hogar y proyectos de construcción de alta gama.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="https://wa.me/50685884086" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="spc.html">Pisos SPC</a></li>
+                    <li><a href="pvc.html">Láminas PVC</a></li>
+                    <li><a href="interior.html">Paneles WPC</a></li>
+                    <li><a href="#">Grifería</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Atención</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Entregas</a></li>
+                    <li><a href="#">Garantías</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>📍 San José, Costa Rica</p>
+                <p>📞 +506 8588-4086</p>
+                <p>✉️ info@jjhogar.com</p>
+                <div class="payment-methods">
+                    <span>💳</span> <span>📱 SINPE</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 J&J Hogar y Construcción. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/50685884086" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

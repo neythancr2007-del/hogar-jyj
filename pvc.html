@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Láminas PVC - J&J Hogar y Construcción</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="empty-space"></div>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="menu-desplegable" class="menu-nav">
+                <a href="index.html">Inicio</a>
+                <div class="dropdown-right">
+                    <a href="javascript:void(0)" class="main-link">Productos <span class="arrow">▶</span></a>
+                    <div class="submenu-mega-horizontal">
+                        <div class="mega-column">
+                            <h4>Pisos y Paredes</h4>
+                            <a href="#">Pisos Porcelanato / Cerámica</a>
+                            <a href="spc.html">Piso SPC (Perfiles)</a>
+                            <a href="pvc.html">Láminas PVC (Perfiles)</a>
+                            <a href="#">Piso Adhesivo</a>
+                            <a href="#">Panel 3D (Pegamento)</a>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Paneles y Decoración</h4>
+                            <a href="flat.html">Panel Exterior (WPC)</a>
+                            <a href="interior.html">Panel Interior</a>
+                            <a href="#">Papel Tapiz / Rollos</a>
+                            <a href="#">Cornisas WPC</a>
+                            <a href="tablillas.html">Tablilla PVC</a>
+                        </div>
+                        <div class="mega-column">
+                            <h4>Construcción y Baño</h4>
+                            <a href="#">Grifería</a>
+                            <a href="#">Pegamentos y Bondex</a>
+                            <a href="#">Fragua</a>
+                            <a href="#">Deck (Clip)</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Contacto</a>
+                <a href="#">Sobre Nosotros</a>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>J&J <span>HOGAR Y CONSTRUCCIÓN</span></h1>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="cart-btn" class="cart-trigger">
+                    🛒 Mi Carrito <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pvc-hero">
+        <div class="pvc-hero-bg"></div> <div class="pvc-hero-content">
+            <h1>Láminas PVC</h1>
+            <p>Elegancia, resistencia y acabados de lujo para tus paredes.</p>
+            <div class="scroll-indicator"><span>↓</span></div>
+        </div>
+    </section>
+<section class="pvc-features">
+    <div class="feature">
+        <span>💧</span>
+        <p>Resistente al agua</p>
+    </div>
+    <div class="feature">
+        <span>🐜</span>
+        <p>Anti-termitas</p>
+    </div>
+    <div class="feature">
+        <span>⚡</span>
+        <p>Instalación rápida</p>
+    </div>
+    <div class="feature">
+        <span>🧼</span>
+        <p>Fácil mantenimiento</p>
+    </div>
+    <div class="feature">
+        <span>🔪</span>
+        <p>se corta con cuter o metabo</p>
+    </div>
+</section>
+    <main class="container">
+        <div class="section-title">
+            <h2>Catálogo de Láminas</h2>
+            <div class="underline"></div>
+        </div>
+        <section class="products-grid" id="products"></section>
+    </main>
+
+    
+    <footer class="footer-premium">
+    <div class="footer-top">
+        <div class="footer-col">
+            <h2 class="footer-logo">J&J <span>HOGAR</span></h2>
+            <p>Especialistas en acabados de lujo para el hogar y proyectos de construcción de alta gama.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">WA</a>
+            </div>
+        </div>
+        
+        <div class="footer-col">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Pisos SPC</a></li>
+                <li><a href="#">Láminas PVC</a></li>
+                <li><a href="#">Paneles WPC</a></li>
+                <li><a href="#">Grifería</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Atención</h3>
+            <ul>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Envíos y Entregas</a></li>
+                <li><a href="#">Garantías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>📍 San José, Costa Rica</p>
+            <p>📞 +506 8588-4086</p>
+            <p>✉️ info@jjhogar.com</p>
+            <div class="payment-methods">
+                <span>💳</span> <span>📱 (SINPE)</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 J&J Hogar y Construcción. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <a href="https://wa.me/50685884086" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Función para el menú lateral (la misma que tienes en el index)
+        function toggleMenu() {
+            document.getElementById("menu-desplegable").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

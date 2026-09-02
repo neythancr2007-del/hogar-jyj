@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - J&J Hogar y Construcción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="carrito-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="empty-space"></div>
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none; color:inherit;">
+                    <h1>J&J <span>HOGAR Y CONSTRUCCIÓN</span></h1>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <section class="cart-container">
+            <h2 class="section-title">Tu Carrito</h2>
+            
+            <div class="cart-layout">
+                <div class="cart-items-list" id="cart-list">
+                    </div>
+
+                <aside class="cart-summary">
+                    <h3>Resumen del Pedido</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₡0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Envío</span>
+                        <span id="shipping">Calculado en WhatsApp</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="final-total">₡0</span>
+                    </div>
+                    <button class="btn-checkout" onclick="sendWhatsAppOrder()">Finalizar Pedido</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
