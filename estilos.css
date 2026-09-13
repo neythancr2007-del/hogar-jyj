@@ -120,6 +120,12 @@ nav {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Animación al agregar producto: combina el scale con el translateY que ya
+   mantiene el botón centrado, para que no se corra de lugar */
+.cart-trigger.cart-bump {
+    transform: translateY(-50%) scale(1.08);
+}
+
 #cart-count {
     background: #e74c3c;
     padding: 2px 8px;
@@ -183,7 +189,6 @@ nav {
     flex-direction: column;
     transition: 0.4s;
     z-index: 999;
-    overflow-y: auto;
 }
 
 .menu-nav.active {
@@ -1294,6 +1299,10 @@ nav {
         font-size: 0.85rem;
     }
 
+    .cart-trigger.cart-bump {
+        transform: scale(1.05);
+    }
+
     .hero-carrusel {
         height: 65vh;
     }
@@ -1339,6 +1348,10 @@ nav {
 
     .cta-buttons {
         flex-direction: column;
+    }
+
+    .menu-nav {
+        overflow-y: auto;
     }
 
     /* En móvil, el submenú se abre como acordeón (tap), no con :hover */
