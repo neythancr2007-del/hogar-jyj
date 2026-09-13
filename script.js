@@ -574,18 +574,31 @@ function mostrarSlides() {
 window.toggleMenu = function() {
     const menu = document.getElementById('menu-desplegable');
     const menuBtn = document.querySelector('.menu-btn');
+    const backdrop = document.getElementById('menu-backdrop');
     
     if (!menu) return;
     
     menu.classList.toggle('active');
     if (menuBtn) menuBtn.classList.toggle('active');
+    if (backdrop) backdrop.classList.toggle('active');
     
     // Prevenir scroll del body cuando el menú está abierto
     if (menu.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = '';
+        // Cerrar cualquier submenú abierto al cerrar el panel
+        document.querySelectorAll('.dropdown-right.open').forEach(el => el.classList.remove('open'));
     }
+};
+
+// Abre/cierra el submenú "Productos" tipo acordeón en pantallas de celular.
+// En pantallas grandes se sigue mostrando con :hover (mega menú horizontal).
+window.toggleSubmenu = function(event, link) {
+    if (window.innerWidth > 768) return; // en desktop, dejar el hover normal
+    event.preventDefault();
+    const parent = link.closest('.dropdown-right');
+    if (parent) parent.classList.toggle('open');
 };
 
 // ============================================
