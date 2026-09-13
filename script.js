@@ -321,9 +321,11 @@ function animateCartButton() {
     const cartBtn = document.querySelector('.cart-trigger') || document.getElementById('cart-btn');
     if (!cartBtn) return;
     
-    cartBtn.style.transform = 'scale(1.1)';
+    // Se usa una clase (no style.transform directo) porque el botón depende
+    // de su propio transform (translateY) para quedar centrado verticalmente.
+    cartBtn.classList.add('cart-bump');
     setTimeout(() => {
-        cartBtn.style.transform = 'scale(1)';
+        cartBtn.classList.remove('cart-bump');
     }, 200);
 }
 
