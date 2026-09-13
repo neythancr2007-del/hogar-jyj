@@ -163,7 +163,7 @@ nav {
 .menu-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.6);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -179,9 +179,9 @@ nav {
 .menu-nav {
     position: fixed;
     top: 0;
-    left: -300px;
-    width: 82%;
-    max-width: 300px;
+    left: -340px;
+    width: 88%;
+    max-width: 340px;
     height: 100vh;
     background: #ffffff;
     box-shadow: 2px 0 20px rgba(0,0,0,0.15);
@@ -195,22 +195,14 @@ nav {
     left: 0;
 }
 
-/* Encabezado del menú con botón de cerrar */
+/* Encabezado del menú: solo el botón de cerrar, alineado a la derecha */
 .menu-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 18px 22px;
+    justify-content: flex-end;
+    padding: 16px 18px;
     border-bottom: 1px solid #f0f0f0;
     flex-shrink: 0;
-}
-
-.menu-header-logo {
-    font-weight: 900;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000;
 }
 
 .menu-close {
@@ -262,10 +254,14 @@ nav {
 
 .arrow {
     display: inline-block;
-    font-size: 0.65rem;
-    line-height: 1;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 5px solid currentColor;
     opacity: 0.5;
     transition: transform 0.3s ease;
+    vertical-align: middle;
 }
 
 .dropdown-right.open .arrow {
